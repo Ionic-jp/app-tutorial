@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Camera } from '@ionic-native/camera';
+import { Badge } from '@ionic-native/badge';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { Camera } from '@ionic-native/camera';
     SplashScreen,
     SocialSharing,
     Camera,
+    Badge,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

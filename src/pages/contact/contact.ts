@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Badge } from '@ionic-native/badge';
 
 @Component({
   selector: 'page-contact',
@@ -7,8 +8,16 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(
+      public navCtrl: NavController,
+      public badge: Badge
+  ) {}
 
+  upBadge(){
+    this.badge.increase(1);
   }
 
+  clearBadge(){
+    this.badge.clear();
+  }
 }
